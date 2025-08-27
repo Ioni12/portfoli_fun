@@ -300,14 +300,16 @@ const Portfolio = () => {
                   <Github size={32} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/enkeljon-gjeta-7b137214b/"
                   className="bg-blue-400 p-4 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all transform hover:-translate-x-1 hover:-translate-y-1"
+                  target="_blank"
                 >
                   <Linkedin size={32} />
                 </a>
                 <a
-                  href="#"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=enkeljongjeta@gmail.com"
                   className="bg-green-400 p-4 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all transform hover:-translate-x-1 hover:-translate-y-1"
+                  target="_blank"
                 >
                   <Mail size={32} />
                 </a>
@@ -350,7 +352,7 @@ const Portfolio = () => {
                       <h4 className="font-black text-xl uppercase">
                         DATABASE PRO
                       </h4>
-                      <p className="font-bold">MongoDB, PostgreSQL, Redis</p>
+                      <p className="font-bold">MongoDB, SQL </p>
                     </div>
                   </div>
                 </div>
@@ -638,7 +640,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="bg-white text-black border-4 border-white shadow-[8px_8px_0px_0px_rgba(255,20,147,1)] p-6 inline-block -skew-x-3">
             <p className="font-black uppercase text-lg">
-              © 2025 YOUR NAME • BUILT WITH REACT & MAXIMUM BRUTALITY! 🔥
+              © 2025 ENKELJON GJETA • BUILT WITH REACT & MAXIMUM BRUTALITY! 🔥
             </p>
           </div>
         </div>
