@@ -97,6 +97,12 @@ const Portfolio = () => {
       color: "bg-red-400",
       shadow: "shadow-red-400",
     },
+    {
+      name: "MySQL",
+      icon: Database,
+      color: "bg-blue-400",
+      shadow: "shadow-blue-400",
+    },
   ];
 
   const projects = [
@@ -105,42 +111,42 @@ const Portfolio = () => {
       title: "E-COMMERCE PLATFORM",
       description:
         "Full-stack MERN application with payment integration, user authentication, and admin dashboard. Built for maximum performance and scalability.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+      tech: ["React", "Node.js", "MongoDB", "2Checkout"],
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Ioni12/trevora",
+      demo: "https://trevora.vercel.app/",
       featured: true,
       color: "bg-pink-400",
       shadow: "shadow-pink-400",
     },
     {
       id: 2,
-      title: "TASK MANAGEMENT APP",
+      title: "FITNESS TRACKER",
       description:
-        "Collaborative project management tool with real-time updates and team features. Socket.io powers the real-time communication.",
-      tech: ["React", "Express", "Socket.io", "MongoDB"],
+        "AI-powered fitness tracker that logs exercises and workouts with intelligent form analysis and personalized recommendations. Features workout planning, progress tracking, and smart analytics.",
+      tech: ["React", "Node.js", "Gemini", "Chart.js", "MongoDB"],
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#",
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+      github: "https://github.com/Ioni12/FitJourney",
+      demo: "https://fit-journey-psi.vercel.app/",
       featured: true,
-      color: "bg-blue-400",
-      shadow: "shadow-blue-400",
+      color: "bg-green-400",
+      shadow: "shadow-green-400",
     },
     {
       id: 3,
-      title: "SOCIAL DASHBOARD",
+      title: "SMART TODO APP",
       description:
-        "Analytics dashboard for social media management with beautiful data visualization and comprehensive reporting.",
-      tech: ["React", "Chart.js", "Node.js", "PostgreSQL"],
+        "Intelligent task management application with priority sorting, deadline tracking, and productivity analytics. Features smart notifications and progress visualization.",
+      tech: ["React", "Node.js", "MongoDb", "Express"],
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      github: "#",
-      demo: "#",
+        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+      github: "https://github.com/Ioni12/Todo_App_mern",
+      demo: "https://todo-app-mern-xwod.vercel.app/",
       featured: false,
-      color: "bg-yellow-400",
-      shadow: "shadow-yellow-400",
+      color: "bg-purple-400",
+      shadow: "shadow-purple-400",
     },
   ];
 
@@ -227,10 +233,12 @@ const Portfolio = () => {
 
           <div className="bg-black text-white border-4 border-black shadow-[12px_12px_0px_0px_rgba(255,20,147,1)] p-6 mb-8 -skew-x-2">
             <p className="text-xl md:text-3xl font-black uppercase">
-              MERN STACK SPECIALIST WHO BUILDS
+              ASPIRING
               <br />
-              <span className="bg-yellow-400 text-black px-2">BRUTAL</span> WEB
-              EXPERIENCES
+              <span className="bg-yellow-400 text-black px-2">
+                SOFTWARE ENGINEER
+              </span>
+              CONTINUOUSLY BUILDING & LEARNING
             </p>
           </div>
 
@@ -281,13 +289,17 @@ const Portfolio = () => {
             >
               <div className="bg-white border-6 border-black shadow-[12px_12px_0px_0px_rgba(255,20,147,1)] p-8 mb-8">
                 <p className="text-xl font-bold leading-relaxed mb-6 uppercase">
-                  I'M A PASSIONATE FULL-STACK DEVELOPER WHO DOESN'T MESS AROUND.
-                  I BUILD FAST, SCALABLE WEB APPS THAT ACTUALLY WORK.
+                  I'm a software engineering student who loves figuring out how
+                  to build things that actually matter.
                 </p>
                 <p className="text-lg font-semibold leading-relaxed mb-6">
-                  My coding journey started with curiosity and evolved into an
-                  obsession with creating BOLD digital solutions that solve real
-                  problems.
+                  My coding journey started when I got curious about how apps
+                  work, and now I'm hooked on creating software that helps
+                  people solve real problems. I'm learning to think like an
+                  engineer, turning messy challenges into clean solutions. Still
+                  a student, still learning every day, but already convinced
+                  that the best software makes someone's life a little bit
+                  easier.
                 </p>
               </div>
 
@@ -421,7 +433,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="bg-pink-400 border-8 border-black shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] p-8 mb-16 -skew-x-3">
             <h2 className="text-6xl font-black text-center uppercase tracking-wider">
-              BRUTAL PROJECTS
+              PROJECTS
             </h2>
           </div>
 
@@ -483,6 +495,7 @@ const Portfolio = () => {
                       <a
                         href={project.github}
                         className="flex items-center gap-3 px-6 py-3 bg-black text-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(255,20,147,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,20,147,1)] transition-all font-black uppercase transform hover:-translate-x-1 hover:-translate-y-1"
+                        target="blank"
                       >
                         <Github size={20} />
                         CODE
@@ -490,6 +503,7 @@ const Portfolio = () => {
                       <a
                         href={project.demo}
                         className={`flex items-center gap-3 px-6 py-3 ${project.color} border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all font-black uppercase transform hover:-translate-x-1 hover:-translate-y-1`}
+                        target="blank"
                       >
                         <ExternalLink size={20} />
                         DEMO
@@ -559,12 +573,14 @@ const Portfolio = () => {
                     <a
                       href={project.github}
                       className="bg-black text-white p-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(255,20,147,1)] hover:shadow-[6px_6px_0px_0px_rgba(255,20,147,1)] transition-all transform hover:-translate-x-1 hover:-translate-y-1"
+                      target="blank"
                     >
                       <Github size={16} />
                     </a>
                     <a
                       href={project.demo}
                       className={`${project.color} p-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all transform hover:-translate-x-1 hover:-translate-y-1`}
+                      target="blank"
                     >
                       <ExternalLink size={16} />
                     </a>
@@ -608,23 +624,24 @@ const Portfolio = () => {
             <div className="bg-pink-400 p-8 border-6 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] skew-x-3 transform hover:-translate-y-2 transition-all">
               <Mail className="mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-black mb-2 uppercase">EMAIL</h3>
-              <p className="font-bold">your.email@example.com</p>
+              <p className="font-bold">enkeljongjeta@gmail.com</p>
             </div>
             <div className="bg-blue-400 p-8 border-6 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] -skew-x-3 transform hover:-translate-y-2 transition-all">
               <Github className="mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-black mb-2 uppercase">GITHUB</h3>
-              <p className="font-bold">github.com/yourusername</p>
+              <p className="font-bold">Ioni12</p>
             </div>
             <div className="bg-green-400 p-8 border-6 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] skew-x-3 transform hover:-translate-y-2 transition-all">
               <Linkedin className="mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-black mb-2 uppercase">LINKEDIN</h3>
-              <p className="font-bold">linkedin.com/in/yourprofile</p>
+              <p className="font-bold">Enkeljon Gjeta</p>
             </div>
           </div>
 
           <a
-            href="mailto:your.email@example.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=enkeljongjeta@gmail.com"
             className="inline-block px-12 py-6 bg-yellow-400 border-8 border-black font-black text-2xl uppercase shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] transition-all transform hover:-translate-x-2 hover:-translate-y-2 skew-x-6"
+            target="_blank"
           >
             SEND MESSAGE!
           </a>
@@ -640,7 +657,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="bg-white text-black border-4 border-white shadow-[8px_8px_0px_0px_rgba(255,20,147,1)] p-6 inline-block -skew-x-3">
             <p className="font-black uppercase text-lg">
-              © 2025 ENKELJON GJETA • BUILT WITH REACT & MAXIMUM BRUTALITY! 🔥
+              © 2025 ENKELJON GJETA • BUILT WITH REACT
             </p>
           </div>
         </div>
