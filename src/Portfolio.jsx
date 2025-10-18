@@ -110,7 +110,7 @@ const Portfolio = () => {
       id: 1,
       title: "E-COMMERCE PLATFORM",
       description:
-        "Full-stack MERN application with payment integration, user authentication, and admin dashboard. Built for maximum performance and scalability. -> be patient while opening this becouse of the slow free servers",
+        "Full-stack MERN application with payment integration, user authentication, and admin dashboard. Built for maximum performance and scalability. -> be patient while opening this because of the slow free servers",
       tech: ["React", "Node.js", "MongoDB", "2Checkout"],
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
