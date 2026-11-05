@@ -61,9 +61,9 @@ const experience = [
   {
     role: "IT Specialist",
     company: "Albanian Development Company",
-    period: "2026 – Present",
+    period: "Aug. 2026 – Present",
     description:
-      "Managing and supporting IT systems, devices and services: setting things up, keeping them running, and troubleshooting issues as they come up.",
+      "Keeping the company's day-to-day IT running: setting up workstations and devices, managing user accounts and access, supporting staff, and troubleshooting hardware, software and network issues.",
     color: "bg-yellow-400",
   },
   {
@@ -71,7 +71,7 @@ const experience = [
     company: "Sisal",
     period: "Mar. 2026 – May 2026",
     description:
-      "Contributed to the development and maintenance of backend systems built on Java Spring Boot, working within a professional engineering team on production-grade codebases.",
+      "Built a banking backend in Java Spring Boot with mentor guidance: multi-currency accounts with generated IBANs, deposits, withdrawals and transfers with live exchange-rate conversion, and balance history. Secured with Spring Security, with global error handling, Caffeine caching, Actuator health checks and Swagger docs on PostgreSQL.",
     color: "bg-blue-400",
   },
   {
