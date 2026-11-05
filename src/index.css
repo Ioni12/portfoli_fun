@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+::selection {
+  background: #f472b6;
+  color: #000;
+}
+
+/* Scroll-in reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Tech ribbon */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee 32s linear infinite;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Floating hero shapes */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(-18px) rotate(55deg); }
+}
+@keyframes float-alt {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(16px) rotate(-8deg); }
+}
+.float-slow { animation: float 6s ease-in-out infinite; }
+.float-slower { animation: float-alt 8s ease-in-out infinite; }
+
+/* Typewriter caret */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.caret {
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+/* Modal entrance */
+@keyframes pop {
+  from { opacity: 0; transform: translate(10px, 10px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+.modal-in { animation: pop 0.2s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .marquee, .float-slow, .float-slower, .caret, .modal-in { animation: none; }
+}
